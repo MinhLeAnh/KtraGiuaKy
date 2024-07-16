@@ -41,7 +41,7 @@ function SignInScreen ({ navigation }) {
     
     <View style={styles.box2}>    
       <Image
-          style={styles.logo}
+          style={[styles.logo]}
           source={require('./assets/logo.png')}
       />
         <Text style={{fontSize:18}}>+880</Text>
@@ -115,6 +115,7 @@ logo: {
     width: 40,
     height: 30,
     marginRight: 10,
+    borderRadius:4,
 },
 buttonText: {
     color: 'white',
@@ -142,7 +143,11 @@ box2:{
   flexDirection:'row',
   position:'absolute',
   left:25,
-  top:500,
+  top:490,
+  borderBottomWidth:1,
+  width:'85%',
+  paddingVertical:10,
+  borderBottomColor:'#E2E2E2'
 },
 box3:{
   position:'absolute',
